@@ -146,5 +146,237 @@ django-saas-starter/
 │   └── workflows/
 │
 ├── manage.py
-├── d
+├── docker-compose.yml
+├── requirements.txt
+└── .env.example
 ```
+
+The structure may evolve as the project develops.
+
+---
+
+## Getting Started
+
+### Requirements
+
+Before starting, make sure you have:
+
+* Python 3.11+
+* PostgreSQL
+* Redis
+* Git
+* Docker (recommended)
+
+### Clone
+
+```bash
+git clone https://github.com/waveinno/django-saas-starter.git
+
+cd django-saas-starter
+```
+
+### Environment
+
+Copy the example environment file:
+
+```bash
+cp .env.example .env
+```
+
+Configure the required environment variables.
+
+### Run with Docker
+
+```bash
+docker compose up --build
+```
+
+The application will become available through the configured development endpoint.
+
+---
+
+## Development
+
+Create a virtual environment:
+
+```bash
+python -m venv .venv
+```
+
+Activate it:
+
+### Linux / macOS
+
+```bash
+source .venv/bin/activate
+```
+
+### Windows
+
+```powershell
+.venv\Scripts\activate
+```
+
+Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+Run migrations:
+
+```bash
+python manage.py migrate
+```
+
+Start the development server:
+
+```bash
+python manage.py runserver
+```
+
+---
+
+## Roadmap
+
+The project is being developed incrementally.
+
+### Foundation
+
+* [x] Initial project structure
+* [ ] Configuration management
+* [ ] PostgreSQL integration
+* [ ] Docker development environment
+
+### Multi-Tenancy
+
+* [ ] Tenant model
+* [ ] Tenant isolation
+* [ ] Tenant-aware middleware
+* [ ] Tenant provisioning
+* [ ] Tenant administration
+
+### Authentication
+
+* [ ] User registration
+* [ ] Authentication
+* [ ] Password management
+* [ ] Session/token management
+
+### Authorization
+
+* [ ] Roles
+* [ ] Permissions
+* [ ] Tenant-level access control
+
+### Platform
+
+* [ ] REST API
+* [ ] Background jobs
+* [ ] Notifications
+* [ ] Audit logging
+* [ ] Health checks
+
+### Production
+
+* [ ] CI/CD
+* [ ] Production Docker setup
+* [ ] Monitoring
+* [ ] Security hardening
+* [ ] AWS deployment examples
+
+---
+
+## Documentation
+
+Project documentation will be maintained under:
+
+```text
+/docs
+```
+
+Planned documentation includes:
+
+* Architecture
+* Multi-tenancy
+* Local development
+* Deployment
+* Configuration
+* Security
+* API usage
+* Contribution guidelines
+
+---
+
+## Contributing
+
+Contributions are welcome.
+
+Please read the project's contribution guidelines before submitting an issue or pull request.
+
+See:
+
+```text
+CONTRIBUTING.md
+```
+
+---
+
+## Security
+
+If you discover a security vulnerability, please report it responsibly rather than opening a public issue.
+
+Security guidance will be maintained in:
+
+```text
+SECURITY.md
+```
+
+---
+
+## License
+
+This project will be released under an open-source license.
+
+See the `LICENSE` file for details.
+
+---
+
+## About Waveinno
+
+**Waveinno Solutions** is an enterprise software engineering company building:
+
+* Enterprise software
+* SaaS platforms
+* AI-powered systems
+* Cloud infrastructure
+* Business applications
+* APIs and distributed systems
+
+🌐 **Website:** https://waveinno.com
+
+🚀 **GitHub:** https://github.com/waveinno
+
+📚 **Engineering:** https://waveinno.com/blog
+
+---
+
+## Support the Project
+
+If this project helps your team:
+
+⭐ Star the repository
+
+🐛 Report issues
+
+💡 Share ideas
+
+🔧 Contribute improvements
+
+---
+
+### Built by Waveinno
+
+**Enterprise software built around how your business actually runs.**
+
+https://waveinno.com
